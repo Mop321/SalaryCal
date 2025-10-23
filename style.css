@@ -1,0 +1,41 @@
+.layer {
+  display: flex;
+  flex-direction: column;
+}
+.layer input {
+  width: 50%;
+  margin: 10px auto;
+  height: 20px;
+  border-radius: 15px;
+}
+
+.layer button {
+  width: 52%;
+  margin: 10px auto;
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  background-color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+.results {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}

@@ -20,7 +20,7 @@ const {
   finalDiv,
 } = varibles;
 function clicks() {
-  submitHours.addEventListener("click", () => {
+  function insideClick() {
     let hoursValue = Number(hoursInput.value);
     let dateValue = dateInput.value;
     if (hoursValue && dateValue) {
@@ -34,11 +34,19 @@ function clicks() {
     } else if (!hoursValue || !dateValue) {
       document.body.innerHTML = "<h1>Error<h1/>";
     }
+  }
+  submitHours.addEventListener("click", () => {
+    insideClick();
   });
-  submitClear.addEventListener("click", () => {
-    localStorage.clear();
+  document.body.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      insideClick();
+    }
   });
 }
+submitClear.addEventListener("click", () => {
+  localStorage.clear();
+});
 
 function result() {
   let html = "";
@@ -56,3 +64,4 @@ function result() {
 }
 result();
 clicks();
+short(3.15 + 5.19 + 7 + 6.12 + 5.57);

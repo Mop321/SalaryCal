@@ -60,8 +60,7 @@ function result() {
     });
   });
   resultDiv.innerHTML = html;
-  finalDiv.innerHTML = `Total Paycheck: ${total}`;
+  finalDiv.innerHTML = `Total Paycheck: ${Math.round(total)}`;
 }
 result();
 clicks();
-short(3.15 + 5.19 + 7 + 6.12 + 5.57);
